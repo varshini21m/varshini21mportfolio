@@ -7,7 +7,7 @@ const Hero = () => {
   return (
     <section className={`relative w-full h-screen mx-auto`}>
       <div
-        className={`absolute inset-0 top-[35px]  max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5`}
+        className={`absolute inset-0 top-[100px]  max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5`}
       >
         <div className="flex flex-col justify-center items-center mt-5">
           <div className="w-5 h-5 rounded-full bg-[#2e33b0]" />
@@ -15,18 +15,21 @@ const Hero = () => {
         </div>
 
         <div>
-          <h1 className={`${styles.heroHeadText} text-white `}>
+          <h1 className={`${styles.heroHeadText} text-white text-justify  `}>
             Hi, I'm <span className="text-[#3e92cc]">Varshini</span>
           </h1>
-          <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-            As a graduate student, I crafted a web application,{" "}
-            <br className="sm:block hidden" />
-            blending academic expertise with practical development skills.
+          <p className={`${styles.heroSubText} mt-10 text-white-100    `}>
+            As a graduate student, I crafted a web application, blending
+            academic expertise with practical development skills.
           </p>
+          <h1 className={`${styles.heroText} text-white  mt-20 `}>
+            Design Beyond Boundaries,{" "}
+            <span className="text-[#3e92cc]">Code with Passion</span>
+          </h1>
         </div>
       </div>
 
-      <ComputersCanvas />
+      {/* <ComputersCanvas /> */}
 
       <div className="absolute xs:bottom-0 bottom-32 w-full flex justify-center items-center">
         <a href="#about">
